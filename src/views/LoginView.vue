@@ -10,7 +10,7 @@
         <div class="block md:flex">
           <button
             type="button"
-            class="w-full text-black p-2 border rounded hover:bg-red-200 focus:outline-none mb-4 flex items-center"
+            class="w-full m-2 text-black p-2 border rounded hover:bg-red-200 focus:outline-none mb-4 flex items-center"
             @click="loginWithFacebook"
           >
             <span class="">
@@ -22,7 +22,7 @@
           <!-- Thêm tùy chọn đăng nhập bằng Google -->
           <button
             type="button"
-            class="w-full text-black p-2 border rounded hover:bg-blue-200 focus:outline-none mb-4 flex items-center"
+            class="w-full text-black m-2 p-2 border rounded hover:bg-blue-200 focus:outline-none mb-4 flex items-center"
             @click="loginWithGoogle"
           >
             <span>
