@@ -65,7 +65,10 @@
         >
           Đăng nhập
         </button>
-        <div class="">Do not have an account? <span class="font-bold">Sign up</span></div>
+        <div class="">
+          Do not have an account?
+          <span class="font-bold"><RouterLink to="/register">Sign up</RouterLink></span>
+        </div>
       </form>
     </div>
   </div>
