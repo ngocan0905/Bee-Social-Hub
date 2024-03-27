@@ -18,10 +18,19 @@
             <div>abi</div>
           </div>
         </div>
+        <div>{{ data }}</div>
       </div>
     </div>
   </ClientLayout>
 </template>
 <script setup>
+import apiConn from '@/api/apiConn'
 import ClientLayout from '@/layouts/ClientLayout.vue'
+import { onBeforeMount, ref } from 'vue'
+const data = ref()
+onBeforeMount(async () => {
+  const res = apiConn.get('tour')
+  data.value = (await res).data
+  console.log(data.value)
+})
 </script>
